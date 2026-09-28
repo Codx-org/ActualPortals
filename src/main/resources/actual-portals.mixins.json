@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "codx.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"ExampleMixin",
+    "PortalChangeMixin",
+    "PortalHandoverMixin",
+    "PortalNotAThingMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

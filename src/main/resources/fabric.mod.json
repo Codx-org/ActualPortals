@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "actual-portals",
+	"version": "${version}",
+	"name": "Actual Portals",
+	"description": "Nether portals you can see through and walk through without a loading screen, built on Planeshift's portal planes.",
+	"authors": [
+		"Niels"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/actual-portals/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"codx.ActualPortals"
+		],
+		"client": [
+			"codx.client.ActualPortalsClient"
+		]
+	},
+	"mixins": [
+		"actual-portals.mixins.json",
+		{
+			"config": "actual-portals.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*",
+		"planeshift": "*"
+	}
+}
